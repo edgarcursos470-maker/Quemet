@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Trabalho SENAI DF && Projeto Quemet">
-    <meta name="keywords" content="HTML, CSS, JavaScript, SENAI DF, Projeto Quemet, Café, Cultura">
-    <meta name="author" content="Edgar Parreira França">
-    <meta name="robots" content="index, follow">
-    <title>Quemet - Café Cultura</title>
-</head>
-<body>
-    <h1>Quemet - Café Cultura</h1>
-    <nav id="menu">
-        <a href="index.html">Página Principal</a>
-        <a href="login.html">Acesse sua Conta</a>
-        <a href="#">Conheça a Quemet</a>
-        <a href="#">Clube de Leitura</a>
-        <a href="#">Bolsa Leitores</a>
-        <a href="#">Novidades</a>
-    </nav>
-    <header> 
-        <!--lembrar de passar o controle das proporções para o CSS-->
-        <img src="./Imagens/bannerPassaport.jpg" alt="Banner da Promoção Passapor Literário da Quemet" width="40%" height="50%">
-    </header>
-    <section name="Sessão de Promoções">
-        <div class="card">
-            <img src = "./Imagens/cafe.jpg" alt="Café Passado, que nem da vovó" width="20%">
-        </div>
-    </section>
-    
-</body>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Trabalho SENAI DF && Projeto Quemet">
+        <meta name="keywords" content="HTML, CSS, JavaScript, SENAI DF, Projeto Quemet, Café, Cultura">
+        <meta name="author" content="Edgar Parreira França">
+        <meta name="robots" content="index, follow">
+        <title>>Quemet - Café Cultura</title>
+    </head>
+    <body>
+        <h1><img src="./Imagens/quemetLogo.webp" alt="Logo da Quemet" width="50px"> Quemet - Café Cultura</h1>
+        <nav id="menu">
+            <a href="index.html">Página Principal</a>
+            <a href="login.html">Acesse sua Conta</a>
+            <a href="#">Conheça a Quemet</a>
+            <a href="#">Clube de Leitura</a>
+            <a href="#">Bolsa Leitores</a>
+            <a href="#">Novidades</a>
+        </nav>
+        <header> 
+            <!--lembrar de passar o controle das proporções para o CSS-->
+            <img src="./Imagens/banner.webp" alt="Banner da Promoção Passapor Literário da Quemet" width="60%" height="auto">
+        </header>
+        <section name="Sessão de Promoções">
+            <div class="card">
+                <img src = "./Imagens/cafe.webp" alt="Café preto, que nem da vovó" width="10%">
+                <div class="card-conteúdo">
+                    <h2>Café Preto</h2>
+                    <p>Café preto, energia para uma boa leitura ou um bom momento de reflexão.</p>
+                </div>
+            </div>
+        </section>
+        <footer class="rodapé">
+            <div classe="redes-sociais" style="float: right">
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+            <div classe="direitos-autorais" style="float: left">
+                <i class="bi bi-c-circle"></i> 2026 Quemet - Café Cultura. Todos os direitos reservados.
+            </div>
+        </footer>
+    </body>
 </html>
