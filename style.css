@@ -5,3 +5,41 @@
     --bg-main: #f9f6f0;
     --bg-cards: #EAE0d5;
 }
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--brand-dark);
+}
+
+.grid-produtos{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+@media (min-width: 768px){
+    .grid-produtos{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.card{
+    background-clor: var(--bg-cards);
+    border-radius: 16px;
+    padding: 16px;
+    text-aligin: center;
+    border: none;
+}
+
+.card img{
+    width: 20%;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+.card h2{
+    font-family: 'Inter', serif;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
