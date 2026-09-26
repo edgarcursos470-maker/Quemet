@@ -21,16 +21,15 @@
                     </a>
                     <div class="collapse navbar-collapse" id="menu-login">
                         <div class="site-nav__links">
-                            <a href="index.html" aria-current="page">Página Principal</a>
-                            <a href="#sobre">Conheça a Quemet</a>
-                            <a href="#produtos">Clube de Leitura</a>
-                            <a href="#produtos">Bolsa Leitores</a>
-                            <a href="#novidades">Novidades</a>
+                            <a href="index.html">Página Principal</a>
+                            <a href="index.html#produtos">Conheça a Quemet</a>
+                            <a href="index.html#produtos">Clube de Leitura</a>
+                            <a href="index.html#produtos">Bolsa Leitores</a>
                         </div>
                     </div>
                     <div class="site-nav__actions">
-                        <a href="#buscar" aria-label="Buscar"><i class="bi bi-search" aria-hidden="true"></i></a>
-                        <a href="login.html" aria-label="Acessar conta"><i class="bi bi-person-circle" aria-hidden="true"></i></a>
+                        <a href="index.html#produtos" aria-label="Buscar produtos"><i class="bi bi-search" aria-hidden="true"></i></a>
+                        <a href="login.html" aria-label="Acessar conta" aria-current="page"><i class="bi bi-person-circle" aria-hidden="true"></i></a>
                     </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-login" aria-controls="menu-login" aria-expanded="false" aria-label="Abrir menu de navegação">
                         <span class="navbar-toggler-icon"></span>
@@ -38,33 +37,49 @@
                 </nav>
             </div>
         </header>
-    <h1>Acesse sua Conta</h1>
-    <section class="login-container">
-        <form id="login-form" action="login.php" method="post" novalidate>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha" required>
-            <button type="submit">
-                <i class="bi bi-box-arrow-in-right"></i> Entrar
-            </button>
-            <a class="btn btn-outline-dark w-100" href="#">
-                <i class="bi bi-person-plus"></i> Cadastre-se
-            </a>
-            <p id="login-message" class="mt-3 mb-0" aria-live="polite"></p>
-        </form>
-    </section>
+    <main>
+        <h1>Acesse sua Conta</h1>
+        <section class="login-container">
+            <form id="login-form" action="login.php" method="post">
+                <label for="usuario">Usuário:</label>
+                <input type="text" id="usuario" name="usuario" required>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+                <button id="login-button" type="button">
+                    <i class="bi bi-box-arrow-in-right"></i> Entrar
+                </button>
+                <div>
+                    <button id="botao-cadastrar" type="button" class="btn btn-outline-dark w-100">
+                        <i class="bi bi-person-plus"></i> Cadastre-se
+                    </button>
+                </div>
+            </form>
+            <form id="form-cadastrar" action="#" method="post">
+                <h2>Cadastre-se</h2>
+                <label for="novo-usuario">Usuário:</label>
+                <input type="text" id="novo-usuario" name="novo-usuario" required>
+                <label for="novo-email">Email:</label>
+                <input type="email" id="novo-email" name="novo-email" required>
+                <label for="nova-senha">Senha:</label>
+                <input type="password" id="nova-senha" name="nova-senha" required>
+                <button id="cadastro-submit" type="button">Cadastrar</button>
+            </form>
+        </section>
+        <button id="voltar-topo" type="button">↑ Voltar ao topo</button>
+    </main>
     <footer class="d-flex justify-content-between align-items-center p-4 flex-column flex-md-row">
             <div class="redes-sociais">
-                <a href="#"><i class="bi bi-whatsapp"></i></a>
-                <a href="#"><i class="bi bi-youtube"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+                <a href="#" aria-label="YouTube"><i class="bi bi-youtube" aria-hidden="true"></i></a>
+                <a href="#" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
             </div>
             <div class="direitos-autorais">
                 <i class="bi bi-c-circle"></i> 2026 Quemet - Café Cultura. Todos os direitos reservados.
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="jquery-script.js"></script>
         <script src="scripts.js"></script>
 </body>
 </html>

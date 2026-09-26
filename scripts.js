@@ -71,26 +71,54 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCarousel();
     }
 
-    const loginForm = document.querySelector('#login-form');
-    const loginMessage = document.querySelector('#login-message');
+    const topButton = document.querySelector('#voltar-topo');
+    const loginButton = document.querySelector('#login-button');
+    const registerButton = document.querySelector('#cadastro-submit');
 
-    if (!loginForm || !loginMessage) {
+    const updateTopButton = () => {
+        if (topButton) {
+            topButton.classList.toggle('visivel', window.scrollY > 200);
+        }
+    };
+
+    if (topButton) {
+        topButton.addEventListener('click', topo);
+        window.addEventListener('scroll', updateTopButton, { passive: true });
+        updateTopButton();
+    }
+
+    if (loginButton) {
+        loginButton.addEventListener('click', login);
+    }
+
+    if (registerButton) {
+        registerButton.addEventListener('click', cadastro);
+    }
+});
+
+function topo(){
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+}
+
+function login(){
+    const usuarioField = document.getElementById('usuario');
+    const senhaField = document.getElementById('senha');
+
+    if (!usuarioField || !senhaField) {
         return;
     }
 
-    loginForm.addEventListener('submit', (event) => {
-        event.preventDefault();
+    const usuario = usuarioField.value.trim().toLowerCase();
+    const senha = senhaField.value.trim().toLowerCase();
 
-        const email = document.querySelector('#email').value.trim();
-        const password = document.querySelector('#senha').value.trim();
+    if (usuario === 'admin' && senha === '123456') {
+        window.location = 'index.html';
+    } else {
+        alert('Acesso Negado. Dados incorretos');
+    }
+}
 
-        if (!email || !password) {
-            loginMessage.textContent = 'Preencha o email e a senha para continuar.';
-            loginMessage.className = 'mt-3 mb-0 text-danger';
-            return;
-        }
-
-        loginMessage.textContent = 'Login preenchido com sucesso.';
-        loginMessage.className = 'mt-3 mb-0 text-success';
-    });
-});
+function cadastro(){
+    alert('Cadastrado com sucesso!');
+    window.location.href = 'index.html';
+}

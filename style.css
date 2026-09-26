@@ -18,17 +18,9 @@ body{
     background-color: var(--brand-dark);
 }
 
-.site-header__inner,
 .conteudo-container{
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.site-header__inner{
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    padding: 16px 24px;
 }
 
 .brand{
@@ -41,13 +33,6 @@ body{
     font-weight: 700;
     text-decoration: none;
     white-space: nowrap;
-}
-
-.site-nav{
-    display: flex;
-    align-items: center;
-    flex: 1;
-    gap: 24px;
 }
 
 .site-nav__links{
@@ -79,8 +64,10 @@ body{
     font-size: 1.25rem;
 }
 
-.site-nav a:hover,
-.site-nav a:focus-visible{
+.site-nav__links a:hover,
+.site-nav__links a:focus-visible,
+.site-nav__actions a:hover,
+.site-nav__actions a:focus-visible{
     color: var(--accent-teal);
 }
 
@@ -140,18 +127,7 @@ body{
     transition: transform 0.4s ease;
 }
 
-.grid-produtos{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 20px;
-}
-
 @media (min-width: 768px){
-    .grid-produtos{
-        grid-template-columns: repeat(3, 1fr);
-    }
-
     #galeria-cards{
         flex-wrap: nowrap;
     }
@@ -221,6 +197,36 @@ body{
     border: 1px solid #ccc;
 }
 
+#voltar-topo{
+    position: fixed;
+    bottom: 5px;
+    right: 50px;
+    display: none;
+    z-index: 10;
+    border: 1px solid var(--brand-dark);
+    border-radius: 4px;
+    padding: 8px 12px;
+    background-color: var(--brand-primary);
+    color: var(--brand-dark);
+}
+
+#voltar-topo.visivel{
+    display: block;
+}
+
+#form-cadastrar{
+    padding: 50px;
+    display: none;
+}
+
+#form-cadastrar input{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
 @media (max-width: 767px){
     .site-header .container-fluid{
         padding-left: 12px;
@@ -242,6 +248,14 @@ body{
 
     .brand span{
         overflow-wrap: anywhere;
+    }
+
+    #voltar-topo{
+        right: 12px;
+    }
+
+    #form-cadastrar{
+        padding: 24px;
     }
 
     .site-nav__links{
