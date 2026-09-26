@@ -12,11 +12,35 @@
     <title>Quemet - Café Cultura</title>
 </head>
 <body>
+    <header class="site-header">
+        <div class="container-fluid">
+                <nav class="navbar navbar-dark navbar-expand-md w-100" aria-label="Navegação principal">
+                    <a class="brand" href="index.html">
+                        <img src="./Imagens/quemetLogo.webp" alt="Logo da Quemet" class="img-fluid" width="50" height="50">
+                        <span>Quemet - Café Cultura</span>
+                    </a>
+                    <div class="collapse navbar-collapse" id="menu-login">
+                        <div class="site-nav__links">
+                            <a href="index.html" aria-current="page">Página Principal</a>
+                            <a href="#sobre">Conheça a Quemet</a>
+                            <a href="#produtos">Clube de Leitura</a>
+                            <a href="#produtos">Bolsa Leitores</a>
+                            <a href="#novidades">Novidades</a>
+                        </div>
+                    </div>
+                    <div class="site-nav__actions">
+                        <a href="#buscar" aria-label="Buscar"><i class="bi bi-search" aria-hidden="true"></i></a>
+                        <a href="login.html" aria-label="Acessar conta"><i class="bi bi-person-circle" aria-hidden="true"></i></a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-login" aria-controls="menu-login" aria-expanded="false" aria-label="Abrir menu de navegação">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
+            </div>
+        </header>
     <h1>Acesse sua Conta</h1>
-    <img src="./Imagens/quemetLogo.webp" alt="Logo da Quemet" width="20px">
-    <i class ="bi bi-search"></i>
     <section class="login-container">
-        <form action="login.php" method="post">
+        <form id="login-form" action="login.php" method="post" novalidate>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
             <label for="senha">Senha:</label>
@@ -24,6 +48,10 @@
             <button type="submit">
                 <i class="bi bi-box-arrow-in-right"></i> Entrar
             </button>
+            <a class="btn btn-outline-dark w-100" href="#">
+                <i class="bi bi-person-plus"></i> Cadastre-se
+            </a>
+            <p id="login-message" class="mt-3 mb-0" aria-live="polite"></p>
         </form>
     </section>
     <footer class="d-flex justify-content-between align-items-center p-4 flex-column flex-md-row">
@@ -36,5 +64,7 @@
                 <i class="bi bi-c-circle"></i> 2026 Quemet - Café Cultura. Todos os direitos reservados.
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="scripts.js"></script>
 </body>
 </html>
