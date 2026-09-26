@@ -13,35 +13,96 @@
         <meta name="keywords" content="HTML, CSS, JavaScript, SENAI DF, Projeto Quemet, Café, Cultura">
         <meta name="author" content="Edgar Parreira França">
         <meta name="robots" content="index, follow">
-        <title>>Quemet - Café Cultura</title>
+        <title>Quemet - Café Cultura</title>
 
     </head>
     <body>
-        <h1><img src="./Imagens/quemetLogo.webp" alt="Logo da Quemet" width="50px"> Quemet - Café Cultura</h1>
-        <nav class="d-flex gap-3 align-items-center p-3" flex-column flex-md-row>
-            <a href="index.html">Página Principal</a>
-            <a href="login.html">Acesse sua Conta</a>
-            <a href="#">Conheça a Quemet</a>
-            <a href="#">Clube de Leitura</a>
-            <a href="#">Bolsa Leitores</a>
-            <a href="#">Novidades</a>
-            <i class ="bi bi-search"></i>
-            <i class = "bi bi-person-circle"></i>
-        </nav>
-        <header> 
-            <!--lembrar de passar o controle das proporções para o CSS-->
-            <img src="./Imagens/banner.webp" alt="Banner da Promoção Passapor Literário da Quemet" width="60%" height="auto">
-        </header>
-        <section aria-label="Sessão de Promoções">
-            <div class="card">
-                <img src = "./Imagens/cafe.webp" alt="Café preto, que nem da vovó" width="10%">
-                <div class="card-conteúdo">
-                    <h2>Café Preto</h2>
-                    <p>Café preto, energia para uma boa leitura ou um bom momento de reflexão.</p>
+        <header class="site-header">
+            <div class="container-fluid">
+                <div class="site-header__inner">
+                    <a class="brand" href="index.html">
+                        <img src="./Imagens/quemetLogo.webp" alt="" width="50" height="50">
+                        <span>Quemet - Café Cultura</span>
+                    </a>
+                    <nav class="site-nav d-flex gap-3 align-items-center flex-column flex-md-row" aria-label="Navegação principal">
+                        <a href="index.html" aria-current="page">Página Principal</a>
+                        <a href="login.html">Acesse sua Conta</a>
+                        <a href="#sobre">Conheça a Quemet</a>
+                        <a href="#produtos">Clube de Leitura</a>
+                        <a href="#produtos">Bolsa Leitores</a>
+                        <a href="#novidades">Novidades</a>
+                        <a href="#buscar" aria-label="Buscar"><i class="bi bi-search" aria-hidden="true"></i></a>
+                        <a href="login.html" aria-label="Acessar conta"><i class="bi bi-person-circle" aria-hidden="true"></i></a>
+                    </nav>
                 </div>
             </div>
-        </section>
-        <footer class="d-flex justify-content-between align-items-center p-4" flex-column flex-md-row>
+        </header>
+
+        <main>
+            <section class="container-fluid hero" aria-labelledby="titulo-pagina">
+                <h1 id="titulo-pagina" class="visually-hidden">Quemet - Café Cultura</h1>
+                <img src="./Imagens/banner.webp" alt="Promoção Passaporte Literário da Quemet" class="hero__image">
+            </section>
+
+            <section id="produtos" class="container-fluid produtos" aria-labelledby="titulo-produtos">
+                <div class="conteudo-container">
+                    <h2 id="titulo-produtos">Sabores para acompanhar sua leitura</h2>
+                    <div class="row g-4">
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                            <article class="card h-100">
+                                <img src="./Imagens/cafe.webp" alt="Café preto servido em uma xícara">
+                                <div class="card-conteudo">
+                                    <h3>Café Preto</h3>
+                                    <p>Café preto para uma boa leitura ou um momento de reflexão.</p>
+                                    <p class="preco">R$ 10,00</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                            <article class="card h-100">
+                                <img src="./Imagens/chaGelado.webp" alt="Chá gelado servido em um copo">
+                                <div class="card-conteudo">
+                                    <h3>Chá Gelado</h3>
+                                    <p>Uma opção refrescante para acompanhar suas descobertas.</p>
+                                    <p class="preco">R$ 10,00</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                            <article class="card h-100">
+                                <img src="./Imagens/espresso.webp" alt="Café espresso servido em uma xícara">
+                                <div class="card-conteudo">
+                                    <h3>Espresso</h3>
+                                    <p>Intensidade e aroma para renovar a energia entre as páginas.</p>
+                                    <p class="preco">R$ 8,00</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                            <article class="card h-100">
+                                <img src="./Imagens/comboEstudante.webp" alt="Combo de café para estudante">
+                                <div class="card-conteudo">
+                                    <h3>Combo Estudante</h3>
+                                    <p>Uma combinação prática para sua rotina de estudos.</p>
+                                    <p class="preco">R$ 18,00</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                            <article class="card h-100">
+                                <img src="./Imagens/comboLeitor.webp" alt="Combo de café para leitor">
+                                <div class="card-conteudo">
+                                    <h3>Combo Leitor</h3>
+                                    <p>O par perfeito para tornar seu momento de leitura especial.</p>
+                                    <p class="preco">R$ 20,00</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="d-flex justify-content-between align-items-center p-4 flex-column flex-md-row">
             <div class="redes-sociais">
                 <a href="#"><i class="bi bi-whatsapp"></i></a>
                 <a href="#"><i class="bi bi-youtube"></i></a>
