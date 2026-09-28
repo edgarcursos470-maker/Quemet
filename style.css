@@ -75,10 +75,18 @@ body{
 }
 
 .hero__image{
+    display: block;
     max-width: 960px;
     max-height: 520px;
     margin: 0 auto;
     object-fit: contain;
+}
+
+@media (min-width: 768px){
+    .hero .col-12{
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .produtos{
