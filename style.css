@@ -42,10 +42,9 @@ body{
     gap: 12px;
 }
 
-.site-nav__links a{
+.site-nav__links a {
     color: var(--brand-primary);
     text-decoration: none;
-    border: 1px solid #000;
     padding: 8px 12px;
     text-align: center;
     white-space: nowrap;
@@ -74,21 +73,13 @@ body{
     padding: 24px 12px;
 }
 
-.hero__image{
+.hero__image {
     display: block;
-    max-width: 960px;
-    max-height: 520px;
-    margin: 0 auto;
-    object-fit: contain;
+    width: 100%;      
+    max-width: 1200px; 
+    height: auto;      
+    margin: 0 auto;    
 }
-
-@media (min-width: 768px){
-    .hero .col-12{
-        display: flex;
-        justify-content: center;
-    }
-}
-
 .produtos{
     padding: 48px 24px;
 }
