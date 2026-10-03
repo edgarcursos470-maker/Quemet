@@ -65,10 +65,14 @@ Quemet/
 │   ├── espresso.webp
 │   ├── comboEstudante.webp
 │   └── comboLeitor.webp
-├── index.html
-├── login.html
-├── scripts.js
-├── style.css
+├── HyperText/
+│   ├── index.html
+│   └── login.html
+├── scripts/
+│   ├── jquery-script.js
+│   └── scripts.js
+├── style/
+│   └── style.css
 ├── .gitignore
 └── README.md
 ```
