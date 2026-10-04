@@ -112,7 +112,7 @@ function login(){
     const senha = senhaField.value.trim().toLowerCase();
 
     if (usuario === 'admin' && senha === '123456') {
-        window.location = 'index.html';
+        window.location.href = 'dashboard.html';
     } else {
         alert('Acesso Negado. Dados incorretos');
     }

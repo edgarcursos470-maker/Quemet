@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="../style/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playball&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Trabalho SENAI DF && Projeto Quemet">
+        <meta name="keywords" content="HTML, CSS, JavaScript, SENAI DF, Projeto Quemet, Café, Cultura">
+        <meta name="author" content="Edgar Parreira França">
+        <meta name="robots" content="index, follow">
+        <title>Quemet - Café Cultura</title>
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="container-fluid">
+                <nav class="navbar navbar-dark navbar-expand-md w-100" aria-label="Navegação principal">
+                    <a class="brand" href="index.html">
+                        <img src="../Imagens/quemetLogo.webp" alt="Logo da Quemet" class="img-fluid" width="50" height="50">
+                        <span>Quemet - Café Cultura</span>
+                    </a>
+                    <div class="collapse navbar-collapse" id="menu-principal">
+                        <div class="site-nav__links">
+                            <a href="index.html" aria-current="page">Página Principal</a>
+                            <a href="sobrenos.html">Conheça a Quemet</a>
+                            <a href="#produtos">Clube de Leitura</a>
+                            <a href="#produtos">Bolsa Leitores</a>
+                        </div>
+                    </div>
+                    <div class="site-nav__actions">
+                        <a href="#produtos" aria-label="Buscar produtos"><i class="bi bi-search" aria-hidden="true"></i></a>
+                        <a href="login.html" aria-label="Acessar conta"><i class="bi bi-person-circle" aria-hidden="true"></i></a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu de navegação">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="container-fluid hero" aria-labelledby="titulo-pagina">
+                <div class="row">
+                    <div class="col-12">
+                    <img src="../Imagens/banner.webp" alt="Promoção Passaporte Literário da Quemet" class="hero__image img-fluid">
+                    </div>
+                </div>
+            </section>
+
+            <section id="produtos" class="container-fluid produtos" aria-labelledby="titulo-produtos">
+                <div class="conteudo-container">
+                    <h2 id="titulo-produtos">Sabores para acompanhar sua leitura</h2>
+                    <div class="galeria-controles">
+                        <button type="button" class="galeria-seta galeria-seta--esquerda d-none d-md-block" id="seta-esquerda" aria-label="Ver produtos anteriores">
+                            <i class="bi bi-chevron-left" aria-hidden="true"></i>
+                        </button>
+                        <div class="galeria-viewport">
+                            <div class="row g-4" id="galeria-cards">
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                            <article class="card h-100">
+                                <img src="../Imagens/cafe.webp" alt="Café preto servido em uma xícara" class="img-fluid">
+                                <div class="card-conteudo">
+                                    <h3>Café Preto</h3>
+                                    <p>Café preto para uma boa leitura ou um momento de reflexão.</p>
+                                    <p class="preco">R$ 10,00</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                            <article class="card h-100">
+                                <img src="../Imagens/chaGelado.webp" alt="Chá gelado servido em um copo" class="img-fluid">
+                                <div class="card-conteudo">
+                                    <h3>Chá Gelado</h3>
+                                    <p>Uma opção refrescante para acompanhar suas descobertas.</p>
+                                    <p class="preco">R$ 10,00</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                            <article class="card h-100">
+                                <img src="../Imagens/espresso.webp" alt="Café espresso servido em uma xícara" class="img-fluid">
+                                <div class="card-conteudo">
+                                    <h3>Espresso</h3>
+                                    <p>Intensidade e aroma para renovar a energia entre as páginas.</p>
+                                    <p class="preco">R$ 8,00</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                            <article class="card h-100">
+                                <img src="../Imagens/comboEstudante.webp" alt="Combo de café para estudante" class="img-fluid">
+                                <div class="card-conteudo">
+                                    <h3>Combo Estudante</h3>
+                                    <p>Uma combinação prática para sua rotina de estudos.</p>
+                                    <p class="preco">R$ 18,00</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                            <article class="card h-100">
+                                <img src="../Imagens/comboLeitor.webp" alt="Combo de café para leitor" class="img-fluid">
+                                <div class="card-conteudo">
+                                    <h3>Combo Leitor</h3>
+                                    <p>O par perfeito para tornar seu momento de leitura especial.</p>
+                                    <p class="preco">R$ 20,00</p>
+                                </div>
+                            </article>
+                        </div>
+                            </div>
+                        </div>
+                        <button type="button" class="galeria-seta galeria-seta--direita d-none d-md-block" id="seta-direita" aria-label="Ver próximos produtos">
+                            <i class="bi bi-chevron-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="destaques" class="destaques" aria-labelledby="titulo-destaques">
+                <div class="conteudo-container destaques__conteudo">
+                    <p class="destaques__rotulo">Destaques</p>
+                    <h2 id="titulo-destaques">Edital Aberto: Bolsa Leitores</h2>
+                    <p>Transforme sua paixão pela literatura em impacto cultural. Estamos selecionando leitores ávidos para participarem diariamente do nosso <strong>Clube de Leitura</strong>.</p>
+                    <p>Os bolsistas selecionados atuarão diretamente na produção de resenhas, artigos e curadoria de conteúdo digital para a comunidade Quemet. Em contrapartida, os aprovados recebem acesso integral ao nosso acervo literário e uma cota de consumação mensal no nosso Café Colonial.</p>
+                </div>
+            </section>
+
+            <section id="novidades" class="novidades" aria-labelledby="titulo-novidades">
+                <div class="conteudo-container novidades__conteudo">
+                    <p class="novidades__rotulo">Novidades</p>
+                    <h2 id="titulo-novidades">Novidades na Quemet</h2>
+                    <h3>Novo Grão: Arábica Suave</h3>
+                    <p>Acabamos de receber um lote exclusivo de grãos arábica com notas de caramelo. Perfeito para acompanhar leituras mais densas.</p>
+                    <a class="novidades__link" href="#">Experimente hoje <span aria-hidden="true">→</span></a>
+                </div>
+            </section>
+            <button id="voltar-topo" type="button">↑ Voltar ao topo</button>
+        </main>
+        <footer class="d-flex justify-content-between align-items-center p-4 flex-column flex-md-row">
+            <div class="redes-sociais">
+                <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+                <a href="#" aria-label="YouTube"><i class="bi bi-youtube" aria-hidden="true"></i></a>
+                <a href="#" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+            </div>
+            <div class="direitos-autorais">
+                <i class="bi bi-c-circle"></i> 2026 Quemet - Café Cultura. Todos os direitos reservados.
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../scripts/scripts.js"></script>
+    </body>
+    </html>
