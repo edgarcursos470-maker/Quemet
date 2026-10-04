@@ -398,3 +398,59 @@ footer{
     color: white;
     padding: 16px 24px; 
 }
+
+.sobrenos-intro{
+    background-color: var(--bg-cards);
+    color: var(--brand-dark);
+    margin: 32px 0;
+    padding: 32px;
+}
+
+.sobrenos-intro__logo{
+    display: block;
+    width: min(100%, 220px);
+    height: auto;
+    margin: 0 auto 24px;
+}
+
+.sobrenos-intro h1{
+    padding: 0;
+    text-align: left;
+}
+
+.sobrenos-intro h2,
+.sobrenos-intro h3{
+    color: var(--accent-teal);
+}
+
+.mapa-container{
+    margin: 32px 0;
+    min-height: 420px;
+}
+
+.mapa-container iframe{
+    width: 100%;
+    min-height: 420px;
+    border: 0;
+}
+
+@media (max-width: 767px){
+    .sobrenos-intro,
+    .mapa-container{
+        margin: 16px 0;
+    }
+
+    .sobrenos-intro{
+        padding: 24px;
+    }
+
+    .sobrenos-intro__logo{
+        width: min(100%, 180px);
+        margin-bottom: 20px;
+    }
+
+    .mapa-container,
+    .mapa-container iframe{
+        min-height: 320px;
+    }
+}
