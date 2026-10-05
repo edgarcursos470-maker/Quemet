@@ -1,57 +1,47 @@
-# Quemet - Café Cultura
+# Quemet — Café Cultura
 
-O **Quemet - Café Cultura** é um projeto desenvolvido como atividade prática do curso de **Full Stack**, com o objetivo de criar uma experiência digital que una café, leitura e cultura em uma interface moderna, responsiva e acessível.
+O **Quemet — Café Cultura** é um projeto acadêmico desenvolvido durante o curso de **Full Stack do SENAI DF**. A aplicação apresenta uma experiência digital que conecta café, leitura e cultura em uma interface acolhedora, responsiva e visualmente inspirada no universo literário.
 
-A aplicação apresenta uma página principal com produtos, navegação, identidade visual própria e uma tela de acesso à conta.
+O projeto foi criado para praticar conceitos fundamentais de desenvolvimento front-end, incluindo estruturação semântica, estilização, responsividade, interatividade e organização de um projeto web.
 
 ## Sobre o projeto
 
-O Quemet foi desenvolvido para representar uma cafeteria voltada para leitores e estudantes. A proposta é oferecer um ambiente digital agradável, com produtos relacionados ao café e espaços destinados à divulgação de conteúdos culturais.
+O Quemet representa uma cafeteria voltada para leitores, estudantes e pessoas que apreciam momentos de pausa acompanhados de café e cultura. A página apresenta produtos, destaques da marca e uma tela de login integrada à identidade visual do projeto.
 
-O projeto foi construído utilizando tecnologias fundamentais do desenvolvimento web front-end, aplicando conceitos de:
-
-- Estruturação de páginas com HTML;
-- Estilização e identidade visual com CSS;
-- Responsividade para diferentes tamanhos de tela;
-- Interatividade com JavaScript;
-- Utilização do framework Bootstrap;
-- Organização de arquivos e recursos;
-- Acessibilidade e boas práticas de desenvolvimento;
-- Versionamento do projeto com Git e GitHub.
+A versão atual é um projeto exclusivamente front-end. Portanto, o login possui validação no navegador, mas ainda não conta com integração com banco de dados ou autenticação real.
 
 ## Funcionalidades
 
-### Página principal
+### Página inicial
 
 - Cabeçalho com logotipo e nome da marca;
 - Menu de navegação responsivo;
-- Banner principal do projeto;
+- Banner principal;
 - Apresentação dos produtos disponíveis;
 - Cards com imagens, descrições e preços;
-- Galeria de produtos com navegação por setas em telas maiores;
-- Seções destinadas a destaques e novidades;
-- Rodapé com redes sociais e informações de direitos autorais.
+- Galeria de produtos com navegação por setas;
+- Seções de destaques e novidades;
+- Rodapé com redes sociais e informações institucionais.
 
 ### Tela de login
 
-- Formulário para preenchimento de e-mail e senha;
+- Campos para e-mail e senha;
 - Validação dos campos obrigatórios;
-- Mensagem de retorno para o usuário;
+- Mensagens de retorno para o usuário;
 - Botão de acesso à conta;
-- Opção visual para cadastro de usuário;
-- Layout integrado à identidade visual do projeto.
-
-> A tela de login possui validação no front-end. A integração com banco de dados e autenticação real não faz parte da versão atual do projeto.
+- Opção visual para cadastro;
+- Layout alinhado à identidade visual do Quemet.
 
 ## Tecnologias utilizadas
 
-- **HTML5** — estrutura das páginas;
-- **CSS3** — estilização, layout e responsividade;
-- **JavaScript** — interações, validação do formulário e controle da galeria;
+- **HTML5** — estrutura e marcação semântica das páginas;
+- **CSS3** — estilização, layout, cores e responsividade;
+- **JavaScript** — validação do formulário e interações da interface;
 - **Bootstrap 5** — componentes e sistema de grid responsivo;
 - **Bootstrap Icons** — ícones utilizados na interface;
-- **Google Fonts** — fontes utilizadas na identidade visual;
-- **Git e GitHub** — controle de versão e hospedagem do código.
+- **Google Fonts** — tipografia do projeto;
+- **jQuery** — suporte a funcionalidades de interação;
+- **Git e GitHub** — versionamento e hospedagem do código.
 
 ## Estrutura do projeto
 
@@ -77,9 +67,15 @@ Quemet/
 └── README.md
 ```
 
-## Como executar o projeto
+## Como executar localmente
 
-1. Faça o download ou clone este repositório:
+### Pré-requisitos
+
+Não é necessário instalar dependências ou utilizar um servidor de aplicação. Basta ter um navegador moderno instalado.
+
+### Execução
+
+1. Clone o repositório:
 
    ```bash
    git clone https://github.com/edgarcursos470-maker/Quemet.git
@@ -91,44 +87,45 @@ Quemet/
    cd Quemet
    ```
 
-3. Abra o arquivo `index.html` em um navegador.
+3. Abra o arquivo `HyperText/index.html` em um navegador.
 
-Também é possível utilizar uma extensão como o **Live Server** no Visual Studio Code para executar o projeto localmente.
+Como alternativa, utilize a extensão **Live Server** no Visual Studio Code e abra o arquivo `HyperText/index.html` para executar o projeto com atualização automática durante o desenvolvimento.
 
-## Responsividade
+## Responsividade e acessibilidade
 
-A aplicação foi desenvolvida para funcionar em diferentes dispositivos, incluindo:
+A aplicação foi planejada para funcionar em diferentes tamanhos de tela, incluindo:
 
-- Computadores;
-- Notebooks;
+- Computadores e notebooks;
 - Tablets;
 - Smartphones.
 
-Em telas menores, o menu de navegação é adaptado, os cards são reorganizados e os conteúdos são ajustados para melhorar a visualização e a usabilidade.
+Em dispositivos menores, o menu, os cards e os demais conteúdos são reorganizados para melhorar a leitura, a navegação e a usabilidade. O projeto também aplica boas práticas de organização de HTML, CSS e JavaScript.
 
 ## Identidade visual
 
-A identidade visual do Quemet utiliza uma combinação de cores relacionada ao universo do café e da literatura:
+A identidade visual do Quemet combina elementos associados ao café e à literatura:
 
-- Marrom escuro para representar o café e a sofisticação;
-- Dourado para destacar a marca e os elementos principais;
-- Tons claros para proporcionar leveza ao layout;
-- Azul-esverdeado como cor de destaque;
-- Tipografia combinando fontes modernas e clássicas.
+- **Marrom escuro:** representa o café, o conforto e a sofisticação;
+- **Dourado:** destaca a marca e os elementos principais;
+- **Tons claros:** proporcionam leveza e equilíbrio ao layout;
+- **Azul-esverdeado:** funciona como cor de destaque;
+- **Tipografia combinada:** une fontes modernas e clássicas para reforçar a proposta cultural.
 
-## Resultado final
+## Limitações atuais
 
-O projeto foi concluído com uma interface funcional e responsiva, contendo:
+- O login ainda não possui autenticação real;
+- Não há integração com banco de dados;
+- Os produtos são exibidos de forma estática;
+- O projeto não possui backend ou API.
 
-- Página inicial estruturada;
-- Navegação responsiva;
-- Catálogo visual de produtos;
-- Galeria interativa;
-- Tela de login;
-- Validação de formulário;
-- Organização dos arquivos;
-- Identidade visual própria;
-- Aplicação de boas práticas de HTML, CSS e JavaScript.
+## Possíveis melhorias futuras
+
+- Implementar cadastro e autenticação de usuários;
+- Integrar os produtos a um banco de dados;
+- Criar carrinho de compras e finalização de pedidos;
+- Adicionar uma área administrativa;
+- Incluir testes automatizados;
+- Publicar a aplicação em uma plataforma de hospedagem.
 
 ## Autor
 
