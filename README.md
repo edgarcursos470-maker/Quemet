@@ -1,52 +1,98 @@
 # Quemet — Café Cultura
 
-O **Quemet — Café Cultura** é um projeto acadêmico desenvolvido durante o curso de **Full Stack do SENAI DF**. A aplicação apresenta uma experiência digital que conecta café, leitura e cultura em uma interface acolhedora, responsiva e visualmente inspirada no universo literário.
+O **Quemet — Café Cultura** é um projeto acadêmico desenvolvido durante o curso de **Programador Full Stack do SENAI DF**. O projeto também representa o desenvolvimento inicial da proposta da Quemet, uma cafeteria com foco em café, leitura, cultura e convivência, criada em conjunto com colegas do Instituto Federal de Brasília.
 
-O projeto foi criado para praticar conceitos fundamentais de desenvolvimento front-end, incluindo estruturação semântica, estilização, responsividade, interatividade e organização de um projeto web.
+A proposta da aplicação é apresentar uma experiência digital para leitores, estudantes e pessoas que apreciam momentos de pausa acompanhados de café e cultura. O site utiliza uma identidade visual inspirada em cafeterias e literatura, com produtos, conteúdos institucionais, divulgação do Clube de Leitura e a iniciativa Bolsa Leitores.
 
-## Sobre o projeto
+> **Status atual:** o projeto continua em desenvolvimento. Para a avaliação deste trabalho, o foco principal está nas páginas `index.html`, `login.html` e nos scripts JavaScript já implementados. A tela `dashboard.html` está sendo desenvolvida gradualmente e ainda não representa um painel administrativo completo.
 
-O Quemet representa uma cafeteria voltada para leitores, estudantes e pessoas que apreciam momentos de pausa acompanhados de café e cultura. A página apresenta produtos, destaques da marca e uma tela de login integrada à identidade visual do projeto.
+## Foco da avaliação
 
-A versão atual é um projeto exclusivamente front-end. Portanto, o login possui validação no navegador, mas ainda não conta com integração com banco de dados ou autenticação real.
+A avaliação atual considera principalmente:
 
-## Funcionalidades
+- a estrutura e a organização do `index.html`;
+- a construção visual e funcional do `login.html`;
+- a utilização de HTML semântico;
+- a estilização com CSS e Bootstrap;
+- a responsividade da interface;
+- as interações implementadas nos arquivos JavaScript;
+- a organização dos arquivos e dos recursos visuais do projeto.
 
-### Página inicial
+O desenvolvimento de novas áreas continuará acontecendo de forma independente e progressiva.
 
-- Cabeçalho com logotipo e nome da marca;
-- Menu de navegação responsivo;
-- Banner principal;
-- Apresentação dos produtos disponíveis;
+## Funcionalidades implementadas
+
+### Página principal — `index.html`
+
+- Cabeçalho com logotipo, nome da marca e navegação;
+- Menu responsivo utilizando Bootstrap;
+- Banner principal do projeto;
+- Apresentação de produtos da cafeteria;
 - Cards com imagens, descrições e preços;
-- Galeria de produtos com navegação por setas;
-- Seções de destaques e novidades;
-- Rodapé com redes sociais e informações institucionais.
+- Galeria de produtos com navegação por setas em telas maiores;
+- Seção de destaque para a Bolsa Leitores;
+- Seção de novidades da Quemet;
+- Botão para voltar ao topo;
+- Rodapé com ícones de redes sociais e informações institucionais.
 
-### Tela de login
+### Tela de login — `login.html`
 
-- Campos para e-mail e senha;
-- Validação dos campos obrigatórios;
-- Mensagens de retorno para o usuário;
-- Botão de acesso à conta;
-- Opção visual para cadastro;
-- Layout alinhado à identidade visual do Quemet.
+- Formulário de acesso com usuário e senha;
+- Validação básica dos campos obrigatórios pelo HTML;
+- Login demonstrativo implementado em JavaScript;
+- Redirecionamento para `dashboard.html` quando os dados definidos no script são informados;
+- Formulário visual de cadastro;
+- Exibição e ocultação do cadastro utilizando jQuery;
+- Layout compartilhado com a identidade visual da página principal.
+
+### Scripts já implementados
+
+O arquivo `scripts/scripts.js` contém:
+
+- navegação da galeria de produtos;
+- adaptação do carrossel para telas desktop e dispositivos menores;
+- botão “Voltar ao topo”;
+- validação demonstrativa do login;
+- redirecionamento para a tela de dashboard;
+- retorno visual de cadastro concluído.
+
+O arquivo `scripts/jquery-script.js` controla a animação de abertura e fechamento do formulário de cadastro na tela de login.
+
+## Dashboard em desenvolvimento
+
+A tela `dashboard.html` está sendo desenvolvida neste momento. A ideia inicial é manter uma estrutura visual semelhante à tela de login, reutilizando a navegação, o cabeçalho, o rodapé e a identidade visual já criada para o projeto.
+
+Aos poucos, serão agregadas funções típicas de um dashboard, como:
+
+- organização de informações da conta;
+- visualização e gerenciamento de produtos;
+- acompanhamento de conteúdos da Quemet;
+- possíveis áreas administrativas;
+- integração futura com dados reais;
+- recursos relacionados ao Clube de Leitura e à Bolsa Leitores.
+
+Essas funcionalidades ainda estão em desenvolvimento e não fazem parte da versão final do projeto.
 
 ## Tecnologias utilizadas
 
-- **HTML5** — estrutura e marcação semântica das páginas;
-- **CSS3** — estilização, layout, cores e responsividade;
-- **JavaScript** — validação do formulário e interações da interface;
-- **Bootstrap 5** — componentes e sistema de grid responsivo;
-- **Bootstrap Icons** — ícones utilizados na interface;
-- **Google Fonts** — tipografia do projeto;
-- **jQuery** — suporte a funcionalidades de interação;
-- **Git e GitHub** — versionamento e hospedagem do código.
+- **HTML5:** estrutura e marcação semântica das páginas;
+- **CSS3:** identidade visual, layout, componentes e responsividade;
+- **JavaScript:** interações da interface, galeria, login demonstrativo e botão de topo;
+- **Bootstrap 5:** sistema de grid, componentes responsivos e navegação;
+- **Bootstrap Icons:** ícones utilizados na interface;
+- **jQuery:** interação e animação do formulário de cadastro;
+- **Google Fonts:** tipografia visual do projeto;
+- **Git e GitHub:** versionamento e hospedagem do código.
 
 ## Estrutura do projeto
 
 ```text
 Quemet/
+├── HyperText/
+│   ├── index.html       página principal e foco principal da avaliação
+│   ├── login.html       tela de login e cadastro demonstrativo
+│   ├── dashboard.html   tela em desenvolvimento
+│   └── sobrenos.html    página institucional sobre a Quemet
 ├── Imagens/
 │   ├── quemetLogo.webp
 │   ├── banner.webp
@@ -55,84 +101,69 @@ Quemet/
 │   ├── espresso.webp
 │   ├── comboEstudante.webp
 │   └── comboLeitor.webp
-├── HyperText/
-│   ├── index.html
-│   └── login.html
 ├── scripts/
-│   ├── jquery-script.js
-│   └── scripts.js
+│   ├── jquery-script.js  interação do formulário de cadastro
+│   └── scripts.js        funcionalidades gerais da interface
 ├── style/
-│   └── style.css
+│   └── style.css         estilos, cores, layout e responsividade
 ├── .gitignore
 └── README.md
 ```
 
-## Como executar localmente
-
-### Pré-requisitos
-
-Não é necessário instalar dependências ou utilizar um servidor de aplicação. Basta ter um navegador moderno instalado.
-
-### Execução
-
-1. Clone o repositório:
-
-   ```bash
-   git clone https://github.com/edgarcursos470-maker/Quemet.git
-   ```
-
-2. Acesse a pasta do projeto:
-
-   ```bash
-   cd Quemet
-   ```
-
-3. Abra o arquivo `HyperText/index.html` em um navegador.
-
-Como alternativa, utilize a extensão **Live Server** no Visual Studio Code e abra o arquivo `HyperText/index.html` para executar o projeto com atualização automática durante o desenvolvimento.
-
-## Responsividade e acessibilidade
-
-A aplicação foi planejada para funcionar em diferentes tamanhos de tela, incluindo:
-
-- Computadores e notebooks;
-- Tablets;
-- Smartphones.
-
-Em dispositivos menores, o menu, os cards e os demais conteúdos são reorganizados para melhorar a leitura, a navegação e a usabilidade. O projeto também aplica boas práticas de organização de HTML, CSS e JavaScript.
-
 ## Identidade visual
 
-A identidade visual do Quemet combina elementos associados ao café e à literatura:
+A identidade visual da Quemet combina elementos associados ao café, ao conforto e à literatura:
 
-- **Marrom escuro:** representa o café, o conforto e a sofisticação;
-- **Dourado:** destaca a marca e os elementos principais;
-- **Tons claros:** proporcionam leveza e equilíbrio ao layout;
-- **Azul-esverdeado:** funciona como cor de destaque;
-- **Tipografia combinada:** une fontes modernas e clássicas para reforçar a proposta cultural.
+- **Marrom escuro:** remete ao café, acolhimento e sofisticação;
+- **Dourado:** utilizado para destacar a marca e elementos importantes;
+- **Tons claros:** ajudam a criar equilíbrio e leveza;
+- **Azul-esverdeado:** usado como cor de destaque em seções culturais;
+- **Playfair Display e Inter:** combinação de uma fonte com referência editorial e outra mais moderna para leitura da interface.
+
+## Como executar localmente
+
+Não é necessário instalar dependências ou configurar um servidor de aplicação. Basta ter um navegador moderno.
+
+```bash
+git clone https://github.com/edgarcursos470-maker/Quemet.git
+cd Quemet
+```
+
+Depois, abra o arquivo abaixo no navegador:
+
+```text
+HyperText/index.html
+```
+
+Durante o desenvolvimento, também é possível utilizar a extensão **Live Server** do Visual Studio Code.
 
 ## Limitações atuais
 
-- O login ainda não possui autenticação real;
-- Não há integração com banco de dados;
-- Os produtos são exibidos de forma estática;
-- O projeto não possui backend ou API.
+O projeto ainda é uma aplicação front-end estática. Portanto:
 
-## Possíveis melhorias futuras
+- o login é apenas demonstrativo;
+- as credenciais ficam definidas no JavaScript;
+- não há autenticação real;
+- não há banco de dados;
+- não há backend ou API;
+- os produtos são cadastrados diretamente no HTML;
+- o dashboard ainda está sendo construído;
+- os links de redes sociais ainda são demonstrativos.
 
-- Implementar cadastro e autenticação de usuários;
-- Integrar os produtos a um banco de dados;
-- Criar carrinho de compras e finalização de pedidos;
-- Adicionar uma área administrativa;
-- Incluir testes automatizados;
-- Publicar a aplicação em uma plataforma de hospedagem.
+## Próximos passos
+
+O desenvolvimento continuará de forma gradual, com possibilidades de:
+
+- concluir a estrutura visual do dashboard;
+- adicionar funcionalidades típicas de um painel administrativo;
+- implementar autenticação real;
+- integrar produtos e usuários a um banco de dados;
+- criar carrinho e fluxo de pedidos;
+- desenvolver recursos do Clube de Leitura e da Bolsa Leitores;
+- publicar a aplicação em uma plataforma de hospedagem.
 
 ## Autor
 
 **Edgar Parreira França**
 
-Projeto desenvolvido como atividade acadêmica do curso de **Full Stack — SENAI DF**.
-
-## Licença
-
-Este projeto foi desenvolvido para fins educacionais e acadêmicos.
+Projeto desenvolvido para fins acadêmicos no curso de **Programador Full Stack — SENAI DF**.
