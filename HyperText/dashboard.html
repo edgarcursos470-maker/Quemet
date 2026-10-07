@@ -16,41 +16,47 @@
         <title>Quemet - Café Cultura</title>
     </head>
     <body>
-        <header class="site-header">
-            <div class="container-fluid">
-                <nav class="navbar navbar-dark navbar-expand-md w-100" aria-label="Navegação principal">
-                    <a class="brand" href="index.html">
-                        <img src="../Imagens/quemetLogo.webp" alt="Logo da Quemet" class="img-fluid" width="50" height="50">
-                        <span>Quemet - Café Cultura</span>
-                    </a>
-                    <div class="collapse navbar-collapse" id="menu-principal">
-                        <div class="site-nav__links">
-                            <a href="index.html" aria-current="page">Página Principal</a>
-                            <a href="sobrenos.html">Conheça a Quemet</a>
-                            <a href="#produtos">Clube de Leitura</a>
-                          <a href="#produtos">Bolsa Leitores</a>
+            <header class="site-header">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-dark navbar-expand-md w-100" aria-label="Navegação principal">
+                        <a class="brand" href="index.html">
+                            <img src="../Imagens/quemetLogo.webp" alt="Logo da Quemet" class="img-fluid" width="50" height="50">
+                            <span>Quemet - Café Cultura</span>
+                        </a>
+                        <div class="collapse navbar-collapse" id="menu-principal">
+                            <div class="site-nav__links">
+                                <a href="index.html" aria-current="page">Página Principal</a>
+                                <a href="sobrenos.html">Conheça a Quemet</a>
+                                <a href="#produtos">Clube de Leitura</a>
+                            <a href="#produtos">Bolsa Leitores</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="site-nav__actions">
-                        <a href="#produtos" aria-label="Buscar produtos"><i class="bi bi-search" aria-hidden="true"></i></a>
-                        <a href="login.html" aria-label="Acessar conta"><i class="bi bi-person-circle" aria-hidden="true"></i></a>
-                    </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu de navegação">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <section class="container-fluid hero" aria-labelledby="titulo-pagina">
-                <div class="row">
-                    <div class="col-12">
-                    <img src="../Imagens/banner.webp" alt="Promoção Passaporte Literário da Quemet" class="hero__image img-fluid">
-                    </div>
+                        <div class="site-nav__actions">
+                            <a href="#produtos" aria-label="Buscar produtos"><i class="bi bi-search" aria-hidden="true"></i></a>
+                            <a href="login.html" aria-label="Acessar conta"><i class="bi bi-person-circle" aria-hidden="true"></i></a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu de navegação">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
                 </div>
-            </section>
-
-            <section id="produtos" class="container-fluid produtos" aria-labelledby="titulo-produtos">
+            </header>
+        <main>
+            <div class=" dashboard-container">
+                <aside class="dashboard-sidebar">
+                    <nav class="dashboard-nav" aria-label="Navegação do painel">
+                        <ul>
+                            <h1>Painel do Usuário</h1>
+                            <li><a href="perfil.html">Perfil</a></li>
+                            <li><a href="pedidos.html">Pedidos</a></li>
+                            <li><a href="clubedeleitura.html">Clube de Leitura</a></li>
+                            <li><a href="bolsaleitores.html">Bolsa Leitores</a></li>
+                            <li><a href="sair.html">Sair</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+            </div>
+             <section id="produtos" class="container-fluid produtos" aria-labelledby="titulo-produtos">
                 <div class="conteudo-container">
                     <h2 id="titulo-produtos">Sabores para acompanhar sua leitura</h2>
                     <div class="galeria-controles">
@@ -115,25 +121,6 @@
                             <i class="bi bi-chevron-right" aria-hidden="true"></i>
                         </button>
                     </div>
-                </div>
-            </section>
-
-            <section id="destaques" class="destaques" aria-labelledby="titulo-destaques">
-                <div class="conteudo-container destaques__conteudo">
-                    <p class="destaques__rotulo">Destaques</p>
-                    <h2 id="titulo-destaques">Edital Aberto: Bolsa Leitores</h2>
-                    <p>Transforme sua paixão pela literatura em impacto cultural. Estamos selecionando leitores ávidos para participarem diariamente do nosso <strong>Clube de Leitura</strong>.</p>
-                    <p>Os bolsistas selecionados atuarão diretamente na produção de resenhas, artigos e curadoria de conteúdo digital para a comunidade Quemet. Em contrapartida, os aprovados recebem acesso integral ao nosso acervo literário e uma cota de consumação mensal no nosso Café Colonial.</p>
-                </div>
-            </section>
-
-            <section id="novidades" class="novidades" aria-labelledby="titulo-novidades">
-                <div class="conteudo-container novidades__conteudo">
-                    <p class="novidades__rotulo">Novidades</p>
-                    <h2 id="titulo-novidades">Novidades na Quemet</h2>
-                    <h3>Novo Grão: Arábica Suave</h3>
-                    <p>Acabamos de receber um lote exclusivo de grãos arábica com notas de caramelo. Perfeito para acompanhar leituras mais densas.</p>
-                    <a class="novidades__link" href="#">Experimente hoje <span aria-hidden="true">→</span></a>
                 </div>
             </section>
             <button id="voltar-topo" type="button">↑ Voltar ao topo</button>
